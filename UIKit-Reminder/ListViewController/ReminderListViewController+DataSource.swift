@@ -14,7 +14,6 @@ extension ReminderListViewController {
     var reminderCompletedValue: String {
         NSLocalizedString("Completed", comment: "Reminder completed value")
     }
-    
     var reminderNotCompletedValue: String {
         NSLocalizedString("Not completed", comment: "Reminder not completed value")
     }
@@ -73,6 +72,15 @@ extension ReminderListViewController {
         button.id = reminder.id
         button.setImage(image, for: .normal)
         return UICellAccessory.CustomViewConfiguration(customView: button, placement: .leading(displayed: .always))
+    }
+    
+    func add(_ reminder: Reminder) {
+        reminders.append(reminder)
+    }
+    
+    func deleteReminder(with id: Reminder.ID) {
+        let index = reminders.indexOfReminder(with: id)
+        reminders.remove(at: index)
     }
     
     func reminder(for id: Reminder.ID) -> Reminder {

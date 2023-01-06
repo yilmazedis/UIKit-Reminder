@@ -137,11 +137,11 @@
 			children = (
 				011CE84E295CF9F3008E66E5 /* ContentViews */,
 				014C295C294A7EA10018B762 /* DetailViewController */,
+				014C294F293A9E330018B762 /* ListViewController */,
 				014C294B293A9DF10018B762 /* Utils */,
 				01A373AC29368EF400E0BDE2 /* Models */,
 				01A3739829368D5C00E0BDE2 /* AppDelegate.swift */,
 				01A3739A29368D5C00E0BDE2 /* SceneDelegate.swift */,
-				014C294F293A9E330018B762 /* ListViewController */,
 				01A373A329368D5E00E0BDE2 /* LaunchScreen.storyboard */,
 				014C2954293AA0480018B762 /* Assets.xcassets */,
 				01A373A629368D5E00E0BDE2 /* Info.plist */,
